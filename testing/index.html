@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Moon is Flat</title>
+    
+    <style>
+    img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation:big 30s ease-in-out infinite, spin 6s linear infinite;
+    }
+      @keyframes big {
+    0% {
+        width:100px;
+    }
+    100% {
+        width:2000px;
+    }
+}
+@keyframes spin {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(359deg);
+    }
+}
+      
+    </style>
+  </head>
+  
+<body>
+
+<h1>the moon is flat</h1>
+
+<p>change my mind.</p>
+
+ <img src="moon.png" />
+</body>
+</html>
