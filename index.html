@@ -4,7 +4,7 @@
     <title>The Moon is Flat</title>
     
     <style>
-    img {
+    .moon {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -18,20 +18,42 @@
     100% {
         width:2000px;
     }
+	
+	}
+	
+	.signA{
+		position: absolute
+		top: 10%;
+		left: 33%;
+		  animation:spin 2s linear infinite;
+		  }
+		  
+	.signB{
+		position: absolute
+		top: 20%;
+		left: 1000
+		  animation:spin 2s linear infinite;
+		  }
+		  
+		  
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(359deg);
+		}
+
+	}
 }
-@keyframes spin {
-    0% {
-        transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    }
-    100% {
-        transform: translateX(-50%) translateY(-50%) rotate(359deg);
-    }
-}
+
       
     </style>
   </head>
   
 <body>
+<img class="signA" src="sign.png"  />
+<img class="signB" src="sign.png"  />
 
 <h1>the moon is flat</h1>
 
@@ -40,6 +62,6 @@
    <p style="font-family:Comic Sans MS; font-size:200%;color:blue;"><i> typography is my </i> <b style="color:red">passion</b> </p>
 
 
- <img src="moon.png" />
+ <img class="moon" src="moon.png" />
 </body>
 </html>
