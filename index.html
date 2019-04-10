@@ -22,18 +22,18 @@
 	}
 	
 	.signA{
-		position: absolute
-		top: 10%;
-		left: 33%;
+		position: static;
+		left:1000px;
+		top: 50%;
 		  animation:spin 2s linear infinite;
 		  }
 		  
 	.signB{
-		position: absolute
-		top: 20%;
-		left: 1000
-		  animation:spin 2s linear infinite;
-		  }
+		position: static;
+		left: 33%;
+		top: 50%;
+		animation:spin 2s linear infinite;
+		}
 		  
 		  
 	@keyframes spin {
@@ -53,7 +53,7 @@
   
 <body>
 <img class="signA" src="sign.png"  />
-<img class="signB" src="sign.png"  />
+<img class="signB" src="sign.png" left="33%"  />
 
 <h1>the moon is flat</h1>
 
