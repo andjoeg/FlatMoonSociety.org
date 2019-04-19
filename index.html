@@ -11,7 +11,7 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    animation:big 30s ease-in-out infinite, spin 6s linear infinite;
+    animation:big 30s ease-in-out infinite, spinrev 30s linear infinite;
     }
       @keyframes big {
     0% {
@@ -45,6 +45,15 @@
 		100% {
 			transform: rotate(359deg);
 		}
+	}
+	@keyframes spinrev {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(-359deg);
+		}
+
 
 	}
 }
@@ -55,15 +64,16 @@
   
 <body>
 <div class="construction" align="center">
-<img class="signA" src="sign.png" vertical-align="middle" />
+<img class="signA" src="sign.png"  height="150" width="150"/>
 <i vertical-align="middle" >this site under construction </i>
-<img class="signB" src="sign.png" />
+<img class="signB" src="sign.png" height=150 width=150 />
 </div>
 
 <h1>the moon is flat</h1>
 
 <p>change my mind.</p>
-  
+   <p style="font-family:Comic Sans MS; font-size:300%;"> Hi AB! </p>   
+   
    <p style="font-family:Comic Sans MS; font-size:200%;color:blue;"><i> typography is my </i> <b style="color:red">passion</b> </p>
 
 
