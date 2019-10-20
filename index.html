@@ -6,20 +6,29 @@
     <title>The Moon is Flat</title>
     
     <style>
-    .moon {
-    position: absolute;
-    left: 40%;
-    top: 40%;
-    transform: translateX(-40%) translateY(-40%);
-    animation:big 30s ease-in-out infinite, spin 20s linear infinite;
-    }
-      @keyframes big {
-    0% {
-        width:100px;
-    }
-    100% {
-        width:2000px;
-    }
+	.centered-element {
+	position: fixed;
+	left: 50%;
+	margin-left: -50px;
+	top: 50%;
+	margin-top: -50px;
+}
+
+    .moon {    
+		
+		animation:big 1800s linear infinite, spin 20s linear infinite;
+		}
+		  @keyframes big {
+		0% {
+			width:10px;
+			margin-left: -5px;			
+			margin-top: -5px;
+		}
+		100% {
+			width:5000px;
+			margin-left: -2500px;
+			margin-top: -2500px;
+		}
 	
 	}
 	
@@ -69,6 +78,6 @@ so uh... if you're interested in a shirt email me at oneofus@flatmoonsociety.org
  <!--  <p style="font-family:Comic Sans MS; font-size:200%;color:blue;"><i> typography is my </i> <b style="color:red">passion</b> </p>
 -->
 
- <img class="moon" src="moon.png" />
+ <img class="moon centered-element" src="moon.png"/>
 </body>
 </html>
